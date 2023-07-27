@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- typewriter -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.20.1/core.min.js"
+      integrity="sha512-VhCNuqzYKIhOU4i+EWPomIQu3AJ8Q2HmuemubIOUHd6m6ohnHynRxBp8Jl/f8xmVEPiKtpKWuacuBeh49SBfCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Portofolio</title>
+  </head>
+  <body class="bg-black transition-all">
+    <!-- NAVBAR -->
+    <nav class="text-gray-200 fixed w-full z-50 bg-transparent">
+      <div class="w-full mx-auto flex justify-between items-center">
+        <div
+          id="nav"
+          class="flex items-center justify-between w-full text-sky-300 font-medium px-5 py-5 backdrop-blur-md md:px-10"
+        >
+          <div class="md:text-4xl xl:w-full">Faris Maulidan</div>
+          <!-- navigasi desktop -->
+          <div
+            class="hidden xl:flex xl:text-xl w-full items-center justify-center text-gray-200 gap-5"
+          >
+            <a
+              href="#home"
+              class="hover:text-sky-500 transition hover:scale-125"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              class="hover:text-sky-500 transition hover:scale-125"
+              >About</a
+            >
+            <a
+              href="#skill"
+              class="hover:text-sky-500 transition hover:scale-125"
+              >Skill</a
+            >
+            <a
+              href="#portofolio"
+              class="hover:text-sky-500 transition hover:scale-125"
+              >Portofolio</a
+            >
+          </div>
+
+          <!-- sosmed mobile dan tablet -->
+          <div
+            class="text-gray-200 flex items-center justify-end gap-4 md:gap-10 text-lg md:text-3xl xl:w-full"
+          >
+            <a
+              href="https://github.com/Faris955/"
+              class="transition hover:scale-125"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/faris-maulidan-5ab5b91a7/"
+              class="transition hover:scale-125"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/farism_955?igshid=ZGUzMzM3NWJiOQ=="
+              class="transition hover:scale-125"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <!-- navigasi mobile -->
+        <div
+          id="navbar"
+          class="text-sm md:text-xl fixed bottom-0 min-w-full mx-auto flex items-center justify-evenly bg-neutral-800 h-[4em] xl:hidden"
+        >
+          <a href="#home" class="hover:text-sky-500 transition hover:scale-125">
+            Home
+          </a>
+          <a href="#about" class="hover:text-sky-500 transition hover:scale-125"
+            >About</a
+          >
+          <a href="#skill" class="hover:text-sky-500 transition hover:scale-125"
+            >Skill</a
+          >
+          <a
+            href="#portofolio"
+            class="hover:text-sky-500 transition hover:scale-125"
+            >Portofolio</a
+          >
+        </div>
+        <!-- sosmed desktop
+        <div class="hidden justify-center items-center gap-5 px-5 py-5">
+          <a
+            href="https://github.com/Faris955/"
+            class="text-lg"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/faris-maulidan-5ab5b91a7/"
+            class="text-lg"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://instagram.com/farism_955?igshid=ZGUzMzM3NWJiOQ=="
+            class="text-lg"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div> -->
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- HOME -->
+    <section id="home" class="min-h-screen">
+      <div
+        class="flex items-center justify-center text-gray-200 px-4 w-full mx-auto"
+      >
+        <div class="flex justify-center items-center flex-col gap-10">
+          <div
+            class="flex justify-center items-center"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
+            <img
+              src="./assets/pp13.jpg"
+              alt=""
+              class="karina border-4 shadow-2xl shadow-sky-300 border-sky-600 w-[15em] h-[15em] rounded-full object-cover md:w-[20em] md:h-[20em]"
+            />
+          </div>
+          <div class="flex justify-center items-center flex-col gap-3">
+            <span
+              class="text-sky-300 md:text-3xl"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              >Hello Everyone</span
+            >
+            <span
+              class="md:text-2xl"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              >Wellcome to my personal website 👋</span
+            >
+            <h1
+              class="md:text-5xl"
+              id="nama"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            ></h1>
+            <span
+              class="text-lg text-sky-300 md:text-2xl"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="300"
+              >Front End Web Developer</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      class="text-gray-200 px-5 md:px-10 py-20 min-h-screen"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-anchor-placement="top-center"
+      data-aos-offset="100"
+    >
+      <div
+        class="flex flex-col gap-5 md:py-10 md:px-10 bg-neutral-800 rounded-md px-5 py-5"
+      >
+        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="800">
+          <h1 class="text-2xl flex items-center gap-5 md:text-4xl">
+            About Me
+            <div class="bg-sky-300 w-[4em] h-[1px]"></div>
+          </h1>
+        </div>
+
+        <div
+          class="flex justify-center items-center"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="1000"
+        >
+          <img
+            src="./assets/pp13.jpg"
+            alt=""
+            class="w-[13em] h-[13em] md:w-[20em] md:h-[20em] rounded-full object-cover"
+          />
+        </div>
+        <div class="w-full flex justify-center items-center h-1 mt-5">
+          <div class="w-48 md:w-64 h-[2px] bg-neutral-600"></div>
+        </div>
+        <div class="text-sm md:text-xl">
+          <p
+            class="indent-10 text-gray-200"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="700"
+          >
+            Hello, I am Faris Maulidan, an active student at STT Stikma
+            International who has high interest and enthusiasm in the field of
+            software development and information technology.
+          </p>
+          <br />
+
+          <p
+            class="indent-10 text-gray-200"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="1000"
+          >
+            I have expertise in programming and web development using various
+            programming languages and the latest frameworks. I have good
+            teamwork skills, and am ready to contribute to challenging projects.
+            One of my successes is graduating from the bootcamp at HariSenin.com
+            as a FullStack Developer, this is my small achievement that makes me
+            excited and want to continue learning.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- SKILL -->
+    <section id="skill" class="text-gray-200 max-h-screen">
+      <div
+        class="px-5 py-20 max-h-screen w-screen flex flex-col gap-10 md:px-10"
+      >
+        <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <h1 class="text-2xl flex items-center gap-5 md:text-5xl">
+            Skill
+            <div class="bg-sky-300 w-[5em] h-[1px]"></div>
+          </h1>
+        </div>
+        <div
+          id="box"
+          class="grid row-auto grid-cols-2 gap-3 md:grid-cols-3"
+        ></div>
+      </div>
+      <!-- box
+          <div id="tech" class="box flex gap-3 items-center px-3 border-2 border-sky-400 p-3 rounded-lg">
+            <div>
+              <i class="fa-brands fa-html5 text-4xl text-orange-400"></i>
+            </div>
+            <div>HTML</div>
+          </div> -->
+    </section>
+    <!-- END SKILL -->
+
+    <!-- PORTOFOLIO -->
+    <section id="portofolio" class="min-h-screen px-5 py-20 text-gray-200">
+      <div class="flex flex-col gap-5 md:px-10">
+        <!-- title -->
+        <div class="flex flex-col ga-3">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <h1 class="text-2xl flex items-center gap-5 md:text-5xl">
+              My Portofolio
+              <div class="bg-sky-300 w-[3em] h-[1px]"></div>
+            </h1>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+            class=""
+          >
+            <h2 class="mt-5 md:text-2xl px-2">Check This Out</h2>
+          </div>
+        </div>
+        <!-- box -->
+        <!-- looping -->
+        <div
+          id="portoBox"
+          class="tes3 grid row-auto grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3"
+        ></div>
+        <!-- thanks -->
+        <div
+          class="bg-neutral-800 flex mt-20 flex-col justify-start items-start gap-5 py-10 px-5 rounded-md"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+          class=""
+        >
+          <div class="text-2xl md:text-4xl">Thank you for visiting 👋</div>
+          <div class="bg-neutral-500 w-[5em] h-[1px] md:w-[9em]"></div>
+          <div
+            class="flex justify-center items-center text-sm md:text-xl xl:text-2xl"
+          >
+            Feel free to contact me via email farisryze@gmail.com
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PORTOFOLIO -->
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
